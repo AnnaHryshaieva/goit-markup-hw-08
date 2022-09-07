@@ -1,0 +1,29 @@
+.about {
+  padding-top: 0;
+  display: none;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+.work-list__item {
+  width: calc((100% - 60px) / 3);
+}
+.work-list__descr {
+  position: relative;
+}
+.work-list__text {
+  @include font(700, 14px, 1.14, 0.03em);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,31 @@
+// /* колір основного тексту #212121 */
+// /* вторинний колір #757575; */
+// /* білий #FFFFFF */
+// /* акцент #2196F3 */
+// /* bgc #2F303A */
+// /* додатковий колір для кнопок #F5F4FA */
+
+// $primaryTextColor: #212121;
+// $titleTextColor: #212121;
+// $accentColor: #2196f3;
+// $secondaryColor: #757575;
+// $whiteColor: #ffffff;
+// $logoColor: #000000;
+// $secondaryColorBtn: #f5f4fa;
+// $secondaryColorDark: #2f303a;
+// $special-logoFont: 'Raleway' sans-serif;
+// $background-color: var(--white-color);
+// $color: var(--primary-text-color);
+// $fontFamily: 'Roboto', sans-serif;
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-color: #757575;
+  --white-color: #ffffff;
+  --logo-color: #000000;
+  --secondary-color-btn: #f5f4fa;
+  --secondary-color-dark: #2f303a;
+  --special-logo-font: 'Raleway' sans-serif;
+}
