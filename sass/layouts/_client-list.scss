@@ -1,13 +1,19 @@
 .client-list__wrapper {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
   margin-left: 0;
   margin-right: 0;
 }
 .client-list__item {
   width: calc((100% - 30px) / 2);
   height: 92px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .client-list__link {
   display: flex;

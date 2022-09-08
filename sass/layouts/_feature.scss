@@ -1,10 +1,16 @@
-// .feature-list {
-//   display: flex;
-//   gap: 30px;
-// }
-.feature-list__item:not(:last-child) {
-  margin-bottom: 30px;
-  // width: calc((100% - 90px) / 4);
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.feature-list__item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .feature-list__title {
   @include font(700, 14px, 1.14, 0.03em);
@@ -12,6 +18,9 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .feature-list__icon {
   display: flex;
