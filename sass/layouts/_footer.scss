@@ -24,20 +24,20 @@
   margin-bottom: 20px;
 }
 .footer__container {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     gap: 70px;
     align-items: baseline;
   }
 }
 .footer-tablet {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     justify-content: center;
     gap: 160px;
     align-items: baseline;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 70px;
   }
 }
@@ -60,11 +60,7 @@
 .link {
   color: rgba(255, 255, 255, 0.6);
 }
-// .soc {
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     padding-top: 5px;
-//   }
-// }
+
 .footer-soc {
   display: flex;
   gap: 10px;
@@ -106,7 +102,7 @@
 }
 
 .subscription {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     flex-direction: column;
   }
@@ -118,14 +114,12 @@
   color: var(--white-color);
 }
 .footer-form {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
 }
 .footer-form__field {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 12px;
   }
 }
@@ -139,10 +133,10 @@
   padding: 16px;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-bottom: 0;
   }
