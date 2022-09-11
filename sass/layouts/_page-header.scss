@@ -130,8 +130,6 @@
   border: none;
 }
 .menu__button--open {
-  width: 40px;
-  height: 40px;
   @include tablet {
     display: none;
   }
@@ -168,6 +166,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+}
+.menu__icon {
+  width: 40px;
+  height: 40px;
 }
 .site-menu__item:not(:last-child) {
   margin-bottom: 36px;
