@@ -48,6 +48,7 @@
   & .title {
     @include font(700, 18px, 2, 0.06em);
     color: var(--title-text-color);
+    margin-bottom: 4px;
   }
   & .link {
     display: inline-block;

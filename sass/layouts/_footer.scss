@@ -41,7 +41,7 @@
     gap: 70px;
   }
 }
-.address-list {
+.footer-address {
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
@@ -60,14 +60,17 @@
 .link {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.soc {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 .footer-soc {
   display: flex;
   gap: 10px;
   margin-top: 20px;
   @media screen and (max-width: 1199px) {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 .footer-soc__item {
@@ -119,6 +122,10 @@
   }
 }
 .footer-form__field {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   @include desktop {
     margin-right: 12px;
   }
@@ -131,7 +138,6 @@
   border-radius: 4px;
   background-color: transparent;
   padding: 16px;
-  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   @include tablet {
     width: 450px;

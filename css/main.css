@@ -32,7 +32,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -264,8 +263,6 @@ body {
 
 .menu__button {
   position: relative;
-  width: 40px;
-  height: 40px;
   margin-left: auto;
   cursor: pointer;
   display: flex;
@@ -275,6 +272,9 @@ body {
   border: none;
 }
 
+.menu__button--open:hover, .menu__button--open:focus {
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .menu__button--open {
     display: none;
@@ -315,6 +315,11 @@ body {
 }
 .menu__button--close:hover, .menu__button--close:focus {
   fill: var(--accent-color);
+}
+
+.menu__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .site-menu__item:not(:last-child) {
@@ -779,7 +784,7 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
-  .address-list {
+  .footer-address {
     margin-bottom: 60px;
   }
 }
@@ -802,6 +807,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1199px) {
+  .soc {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-soc {
   display: flex;
   gap: 10px;
@@ -810,7 +821,6 @@ body {
 @media screen and (max-width: 1199px) {
   .footer-soc {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -872,6 +882,12 @@ body {
   }
 }
 
+.footer-form__field {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 1200px) {
   .footer-form__field {
     margin-right: 12px;
@@ -886,7 +902,6 @@ body {
   border-radius: 4px;
   background-color: transparent;
   padding: 16px;
-  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (min-width: 768px) {
@@ -990,6 +1005,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .project-list .link {
   display: inline-block;
@@ -1180,6 +1196,11 @@ body {
   color: #757575;
 }
 @media screen and (min-width: 480px) {
+  .checkbox-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
   .checkbox-text {
     font-size: 14px;
   }

@@ -130,6 +130,10 @@
   border: none;
 }
 .menu__button--open {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   @include tablet {
     display: none;
   }
